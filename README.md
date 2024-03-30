@@ -9,7 +9,7 @@ This will start the app in development mode. Open [http://localhost:3000](http:/
 To get started, clone this Git repository, install dependencies, and run the app:
 
 ```bash
-git clone <https://github.com/MR-Shivam-Tiwari/TaskManageMERN.git>
+git clone <https://github.com/MR-Shivam-Tiwari/Task.git>
 cd task-manage (In FrontEnd)
 cd backend (In Backend)
 npm install (In Both Frontend Backend)
@@ -24,8 +24,8 @@ npm start
 ### Register Page
 ![image](https://github.com/MR-Shivam-Tiwari/TaskManageMERN/assets/114647321/ce3271c9-6504-44c2-8038-56f931914693)
 
-### Dashboard Page
-![image](https://github.com/MR-Shivam-Tiwari/TaskManageMERN/assets/114647321/5a6427d9-3321-4792-8258-0d40d45b4966)
+### Home Page
+![image](https://github.com/MR-Shivam-Tiwari/Task/assets/114647321/aa7e11ac-bc6f-4756-a4c0-f25b0e2bdb4a)
 
 
 

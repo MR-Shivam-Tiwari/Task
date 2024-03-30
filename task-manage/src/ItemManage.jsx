@@ -6,10 +6,8 @@ import Input from "@mui/joy/Input";
 import Modal from "@mui/joy/Modal";
 import ModalDialog from "@mui/joy/ModalDialog";
 import DialogTitle from "@mui/joy/DialogTitle";
-import DialogContent from "@mui/joy/DialogContent";
 import Stack from "@mui/joy/Stack";
 import { useNavigate } from "react-router-dom";
-import { Option, Select } from "@mui/joy";
 function ItemManage() {
   const [tasks, setTasks] = useState([]);
   const [open, setOpen] = useState(false);
@@ -52,7 +50,7 @@ function ItemManage() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/tasks", {
+      const response = await fetch("https://task-lake.vercel.app/api/tasks", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +71,7 @@ function ItemManage() {
 
   const handleTaskCreate = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/tasks", {
+      const response = await fetch("https://task-lake.vercel.app/api/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +103,7 @@ function ItemManage() {
   const handleTaskUpdate = async (taskId, updatedTaskData) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/tasks/${taskId}`,
+        `https://task-lake.vercel.app/api/tasks/${taskId}`,
         {
           method: "PUT",
           headers: {
@@ -133,7 +131,7 @@ function ItemManage() {
   const handleTaskDelete = async (taskId) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/tasks/${taskId}`,
+        `https://task-lake.vercel.app/api/tasks/${taskId}`,
         {
           method: "DELETE",
           headers: {
@@ -158,7 +156,7 @@ function ItemManage() {
   const handleCompletedClick = async (taskId) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/taskscompleted/${taskId}`,
+        `https://task-lake.vercel.app/api/taskscompleted/${taskId}`,
         {
           method: "PUT",
           headers: {
